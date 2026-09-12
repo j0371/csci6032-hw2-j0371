@@ -1,0 +1,5 @@
+This is the first line of the sample text file.
+I am just going to flow of concious type these lines
+because I'm not yet sure what this will be used for.
+I just ate a breakfast burrito bowl that I had in the freezer.
+I am quite interested in agentic and multimodal Language Models.

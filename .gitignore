@@ -1,3 +1,4 @@
 .venv/
 .vscode/
 Workflows/
+__pycache__/

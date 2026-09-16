@@ -1,6 +1,6 @@
 # Agent Safety Policy
 
-This policy applies to all agents working on the CSCI 6032 Homework 2 repository.(csci6032-hw2-j0371)
+This policy applies to all agents working in this repository
 
 1. **Stay inside this repository.** Start from the repository root and limit
    file access, commands, and changes to this repository. Do not access unrelated
@@ -39,8 +39,9 @@ This policy applies to all agents working on the CSCI 6032 Homework 2 repository
 
 7. **Keep changes small and reviewable.** Edit only the files needed for the
    current task. Avoid unrelated refactoring, formatting, generated files, and
-   dependency changes. Preserve notebook content, outputs, and metadata unless
-   the requested task requires changing them.
+   dependency changes. Preserve all notebook content, outputs, and metadata 
+   for all notebooks outside of the /Workflows/ directory unless
+   the requested task explicitly requests to modify them.
 
 8. **Show and test the result.** After editing, show `git diff` and check
    `git status`. Show the contents or a diff of new untracked files as well,
@@ -58,3 +59,12 @@ This policy applies to all agents working on the CSCI 6032 Homework 2 repository
     before saying the task is complete. Distinguish changes made from checks
     actually performed, and disclose any remaining failure or unverified step.
     Never invent test results, sandbox status, commits, or submission evidence.
+
+11. **Review policies at the start of all workflows.** Before performing any
+   agentic work, review this AGENTS.md file in full and review all policy
+   files in the Policies/ directory. Treat all supplemental policy files as
+   extensions of this policy and identify which requirements apply to the
+   current workflow before taking further action. If multiple policies apply,
+   follow all of them unless they conflict; if a conflict exists, stop and
+   report it to the user rather than choosing one silently. Review all
+   supplemental policies once you are done reviewing this one right now

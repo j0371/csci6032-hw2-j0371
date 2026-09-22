@@ -1,8 +1,0 @@
-Usage:
-Run the text statistics utility with a UTF-8 text file as the single argument:
-python src/text_stats.py sample.txt
-
-The script prints JSON in the format:
-{"lines": 5, "words": 55, "characters": 281}
-
-This counts newline-separated lines, whitespace-delimited words, and total characters in the file.

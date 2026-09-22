@@ -2,3 +2,6 @@
 .vscode/
 Workflows/
 __pycache__/
+
+BuildAndStartContainer.bat
+SetContainerRuntimeConfig.sh

@@ -24,11 +24,12 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | g
     apt-get update && apt-get install -y --no-install-recommends gh && \
     rm -rf /var/lib/apt/lists/*
 
-# Install the current stable GitHub Copilot CLI from an explicit release asset
-# This uses a pinned release version for reproducibility and avoids a floating prerelease
-RUN curl -fsSL https://github.com/github/gh-copilot/releases/download/v1.2.0/linux-amd64 -o /tmp/copilot && \
+# Install the current stable GitHub Copilot CLI (standalone) from an explicit release asset
+# Use a pinned release from the official copilot-cli repo for reproducibility
+RUN curl -fsSL https://github.com/github/copilot-cli/releases/download/v1.0.88/copilot-linux-x64.tar.gz -o /tmp/copilot.tar.gz && \
+    tar -xzf /tmp/copilot.tar.gz -C /tmp && \
     install -m 0755 /tmp/copilot /usr/local/bin/copilot && \
-    rm -f /tmp/copilot
+    rm -f /tmp/copilot /tmp/copilot.tar.gz
 
 #Layer 3---------------------------------------------------------------------
 # Create a non-root user 'agent' with fixed UID/GID for consistency

@@ -2,6 +2,7 @@
 .vscode/
 Workflows/
 __pycache__/
+.playwright-mcp/
 
 BuildAndStartContainer.bat
 SetContainerRuntimeConfig.sh

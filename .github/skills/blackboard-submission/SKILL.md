@@ -75,6 +75,8 @@ Run each of the following and show the raw output to the student:
    Report any hits verbatim so the student can judge them; do not decide on
    the student's behalf that a hit is safe.
 
+7. Review the homework notebook to ensure all major requirements of the assignment are satisified and that there are no obvious errors or omissions.
+
 ## Step 3 — Stop conditions
 
 Stop and clearly report the problem (do not proceed to Step 4) if any of the
@@ -84,6 +86,7 @@ following is true:
 - Any required file from Step 2.5 is missing or untracked.
 - Step 2.6 found an unresolved secret or private-data pattern.
 - Step 1 could not confirm the expected repository/remote.
+- There is a major, or obvious error in the homework notebook that prevents it from meeting the assignment requirements.
 
 ## Step 4 — Confirm the branch has been pushed
 
